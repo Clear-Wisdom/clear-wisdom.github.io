@@ -1,0 +1,217 @@
+{
+  "2026": {
+    "Cortex": [
+      {
+        "name": "AI Platform Development",
+        "location": "Seoul, Korea",
+        "period": "Jan 2026 - Present",
+        "tags": ["TypeScript", "Next.js", "AI/ML"],
+        "description": "AI 플랫폼 개발 프로젝트의 상세 설명입니다."
+      },
+      {
+        "name": "Infrastructure Optimization",
+        "location": "Seoul, Korea",
+        "period": "Jan 2026 - Present",
+        "tags": ["Docker", "Kubernetes", "AWS"],
+        "description": "인프라 최적화 프로젝트의 상세 설명입니다."
+      },
+      {
+        "name": "API Development",
+        "location": "Seoul, Korea",
+        "period": "Jan 2026 - Present",
+        "tags": ["Python", "FastAPI", "PostgreSQL"],
+        "description": "API 개발 프로젝트의 상세 설명입니다."
+      }
+    ],
+    "Freelance": [
+      {
+        "name": "E-commerce Platform",
+        "location": "Remote",
+        "period": "Jan 2026 - Feb 2026",
+        "tags": ["React", "Node.js", "MongoDB"],
+        "description": "이커머스 플랫폼 프로젝트의 상세 설명입니다."
+      },
+      {
+        "name": "Mobile App Development",
+        "location": "Remote",
+        "period": "Jan 2026 - Present",
+        "tags": ["React Native", "Firebase"],
+        "description": "모바일 앱 개발 프로젝트의 상세 설명입니다."
+      },
+      {
+        "name": "Consulting Project",
+        "location": "Remote",
+        "period": "Jan 2026",
+        "tags": ["Consulting", "Architecture"],
+        "description": "컨설팅 프로젝트의 상세 설명입니다."
+      }
+    ]
+  },
+  "2025": {
+    "Startup A": [
+      {
+        "name": "Product Launch",
+        "location": "Seoul, Korea",
+        "period": "Jul 2025 - Dec 2025",
+        "tags": ["Product Management", "Agile"],
+        "description": "제품 런칭 프로젝트의 상세 설명입니다."
+      },
+      {
+        "name": "Backend Refactoring",
+        "location": "Seoul, Korea",
+        "period": "Mar 2025 - Jun 2025",
+        "tags": ["Go", "gRPC", "Microservices"],
+        "description": "백엔드 리팩토링 프로젝트의 상세 설명입니다."
+      },
+      {
+        "name": "DevOps Pipeline",
+        "location": "Seoul, Korea",
+        "period": "Jan 2025 - Feb 2025",
+        "tags": ["CI/CD", "GitHub Actions", "Terraform"],
+        "description": "DevOps 파이프라인 구축 프로젝트의 상세 설명입니다."
+      }
+    ],
+    "Company B": [
+      {
+        "name": "Data Pipeline",
+        "location": "Busan, Korea",
+        "period": "Aug 2025 - Nov 2025",
+        "tags": ["Apache Kafka", "Spark"],
+        "description": "데이터 파이프라인 프로젝트의 상세 설명입니다."
+      },
+      {
+        "name": "ML Model Deployment",
+        "location": "Busan, Korea",
+        "period": "May 2025 - Jul 2025",
+        "tags": ["MLOps", "TensorFlow"],
+        "description": "ML 모델 배포 프로젝트의 상세 설명입니다."
+      },
+      {
+        "name": "Dashboard Development",
+        "location": "Busan, Korea",
+        "period": "Feb 2025 - Apr 2025",
+        "tags": ["Vue.js", "D3.js"],
+        "description": "대시보드 개발 프로젝트의 상세 설명입니다."
+      }
+    ],
+    "Open Source": [
+      {
+        "name": "Library Contribution",
+        "location": "Remote",
+        "period": "2025",
+        "tags": ["Open Source", "TypeScript"],
+        "description": "오픈소스 기여 프로젝트의 상세 설명입니다."
+      },
+      {
+        "name": "CLI Tool Development",
+        "location": "Remote",
+        "period": "2025",
+        "tags": ["Rust", "CLI"],
+        "description": "CLI 도구 개발 프로젝트의 상세 설명입니다."
+      },
+      {
+        "name": "Documentation",
+        "location": "Remote",
+        "period": "2025",
+        "tags": ["Technical Writing"],
+        "description": "문서화 프로젝트의 상세 설명입니다."
+      }
+    ]
+  },
+  "2024": {
+    "Company A": [
+      {
+        "name": "Project Title",
+        "location": "Seoul, Korea",
+        "period": "Jan 2024 - Dec 2024",
+        "tags": ["TypeScript", "React", "Docker"],
+        "description": "프로젝트에 대한 자세한 설명입니다."
+      },
+      {
+        "name": "Another Project",
+        "location": "Remote",
+        "period": "Mar 2024 - Jun 2024",
+        "tags": ["Python", "FastAPI", "AWS"],
+        "description": "두 번째 프로젝트의 상세 설명입니다."
+      },
+      {
+        "name": "Third Project",
+        "location": "Seoul, Korea",
+        "period": "Jul 2024 - Sep 2024",
+        "tags": ["Node.js", "GraphQL"],
+        "description": "세 번째 프로젝트의 상세 설명입니다."
+      }
+    ],
+    "University": [
+      {
+        "name": "Capstone Project",
+        "location": "Seoul, Korea",
+        "period": "Mar 2024 - Jun 2024",
+        "tags": ["Research", "Python"],
+        "description": "캡스톤 프로젝트의 상세 설명입니다."
+      },
+      {
+        "name": "Research Assistant",
+        "location": "Seoul, Korea",
+        "period": "Jan 2024 - Dec 2024",
+        "tags": ["Data Analysis", "R"],
+        "description": "연구 조교 활동의 상세 설명입니다."
+      },
+      {
+        "name": "Teaching Assistant",
+        "location": "Seoul, Korea",
+        "period": "Sep 2024 - Dec 2024",
+        "tags": ["Teaching", "Mentoring"],
+        "description": "조교 활동의 상세 설명입니다."
+      }
+    ]
+  },
+  "2023": {
+    "University": [
+      {
+        "name": "Research Project",
+        "location": "Seoul, Korea",
+        "period": "Sep 2023 - Dec 2023",
+        "tags": ["Research", "Data Analysis"],
+        "description": "연구 프로젝트의 상세 설명입니다."
+      },
+      {
+        "name": "Course Project",
+        "location": "Seoul, Korea",
+        "period": "Mar 2023 - Jun 2023",
+        "tags": ["Java", "Spring"],
+        "description": "수업 프로젝트의 상세 설명입니다."
+      },
+      {
+        "name": "Team Project",
+        "location": "Seoul, Korea",
+        "period": "Jan 2023 - Feb 2023",
+        "tags": ["Teamwork", "Figma"],
+        "description": "팀 프로젝트의 상세 설명입니다."
+      }
+    ],
+    "Internship": [
+      {
+        "name": "Web Development",
+        "location": "Seoul, Korea",
+        "period": "Jul 2023 - Aug 2023",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "description": "인턴십 프로젝트의 상세 설명입니다."
+      },
+      {
+        "name": "Documentation",
+        "location": "Seoul, Korea",
+        "period": "Jul 2023 - Aug 2023",
+        "tags": ["Technical Writing"],
+        "description": "문서화 작업의 상세 설명입니다."
+      },
+      {
+        "name": "QA Testing",
+        "location": "Seoul, Korea",
+        "period": "Jul 2023 - Aug 2023",
+        "tags": ["Testing", "QA"],
+        "description": "QA 테스팅 프로젝트의 상세 설명입니다."
+      }
+    ]
+  }
+}

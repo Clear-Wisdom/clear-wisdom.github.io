@@ -1,1 +1,3 @@
-Randy's portfolio repository
+# [Randy's portfolio repository](https://clear-wisdom.github.io)
+
+click above to see my portfolio.
