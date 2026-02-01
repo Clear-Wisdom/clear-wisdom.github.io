@@ -50,13 +50,13 @@ document.addEventListener('DOMContentLoaded', () => {
   navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
-      
+
       const targetSection = link.getAttribute('data-section');
-      
+
       // Update active nav link
       navLinks.forEach(navLink => navLink.classList.remove('active'));
       link.classList.add('active');
-      
+
       // Show target section
       sections.forEach(section => {
         section.classList.remove('active');
@@ -98,13 +98,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   emailDropdown?.addEventListener('click', async (e) => {
     e.stopPropagation();
-    
+
     try {
       await navigator.clipboard.writeText(email);
-      
+
       // Show success message
       copySuccess.classList.add('show');
-      
+
       // Hide after 1 second
       setTimeout(() => {
         copySuccess.classList.remove('show');
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Helper: Create project item HTML
   const createProjectItem = (project, projectId) => {
-    const tagsHtml = project.tags.map(tag => 
+    const tagsHtml = project.tags.map(tag =>
       `<span class="project-tag">${tag}</span>`
     ).join('');
 
@@ -144,8 +144,8 @@ document.addEventListener('DOMContentLoaded', () => {
             <polyline points="6 9 12 15 18 9"/>
           </svg>
         </div>
-        <div class="project-details">
-          <p>${project.description}</p>
+        <div class="project-details" data-description-url="${project.descriptionUrl || ''}">
+            <div class="markdown-content">Loading...</div>
         </div>
       </div>
     `;
@@ -154,25 +154,25 @@ document.addEventListener('DOMContentLoaded', () => {
   // Render all projects from JSON data
   const renderProjects = (data) => {
     let html = '';
-    
+
     // Sort years in descending order
     const years = Object.keys(data).sort((a, b) => b - a);
-    
+
     years.forEach(year => {
       const yearId = `year-${year}`;
       const orgs = data[year];
-      
+
       let orgHtml = '';
       Object.keys(orgs).forEach((orgName, orgIndex) => {
         const orgId = `org-${slugify(orgName)}-${year}`;
         const projects = orgs[orgName];
-        
+
         let projectsHtml = '';
         projects.forEach((project, projIndex) => {
           const projectId = `project-${slugify(project.name)}-${year}-${orgIndex}-${projIndex}`;
           projectsHtml += createProjectItem(project, projectId);
         });
-        
+
         orgHtml += `
           <div class="org-group" id="${orgId}">
             <h4 class="org-title">${orgName}</h4>
@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         `;
       });
-      
+
       html += `
         <div class="year-group" id="${yearId}">
           <h3 class="year-title">${year}</h3>
@@ -188,53 +188,53 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       `;
     });
-    
+
     projectsContainer.innerHTML = html;
   };
 
   // Generate TOC from rendered projects
   const generateTOC = () => {
     tocList.innerHTML = '';
-    
+
     const yearGroups = document.querySelectorAll('.year-group');
-    
+
     yearGroups.forEach(yearGroup => {
       const yearTitle = yearGroup.querySelector('.year-title')?.textContent;
       const yearId = yearGroup.id;
-      
+
       const yearLi = document.createElement('li');
       yearLi.className = 'toc-year';
-      
+
       const yearLink = document.createElement('a');
       yearLink.href = `#${yearId}`;
       yearLink.className = 'toc-link';
       yearLink.textContent = yearTitle;
       yearLi.appendChild(yearLink);
-      
+
       const orgSublist = document.createElement('ul');
       orgSublist.className = 'toc-sublist';
-      
+
       const orgGroups = yearGroup.querySelectorAll('.org-group');
       orgGroups.forEach(orgGroup => {
         const orgTitle = orgGroup.querySelector('.org-title')?.textContent;
         const orgId = orgGroup.id;
-        
+
         const orgLi = document.createElement('li');
-        
+
         const orgLink = document.createElement('a');
         orgLink.href = `#${orgId}`;
         orgLink.className = 'toc-link toc-org';
         orgLink.textContent = orgTitle;
         orgLi.appendChild(orgLink);
-        
+
         const projectSublist = document.createElement('ul');
         projectSublist.className = 'toc-sublist';
-        
+
         const projectItems = orgGroup.querySelectorAll('.project-item');
         projectItems.forEach(projectItem => {
           const projectName = projectItem.querySelector('.project-name')?.textContent;
           const projectId = projectItem.id;
-          
+
           const projectLi = document.createElement('li');
           const projectLink = document.createElement('a');
           projectLink.href = `#${projectId}`;
@@ -243,11 +243,11 @@ document.addEventListener('DOMContentLoaded', () => {
           projectLi.appendChild(projectLink);
           projectSublist.appendChild(projectLi);
         });
-        
+
         orgLi.appendChild(projectSublist);
         orgSublist.appendChild(orgLi);
       });
-      
+
       yearLi.appendChild(orgSublist);
       tocList.appendChild(yearLi);
     });
@@ -255,11 +255,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Setup accordion event listeners
   const setupAccordions = () => {
-    projectsContainer?.addEventListener('click', (e) => {
+    projectsContainer?.addEventListener('click', async (e) => {
       const header = e.target.closest('[data-accordion]');
       if (header) {
         const projectItem = header.closest('.project-item');
         projectItem.classList.toggle('open');
+
+        // Lazy load markdown if opening and url exists
+        if (projectItem.classList.contains('open')) {
+          const details = projectItem.querySelector('.project-details');
+          const contentContainer = details.querySelector('.markdown-content');
+          const url = details.dataset.descriptionUrl;
+
+          if (url && !details.dataset.loaded) {
+            try {
+              const response = await fetch(url);
+              if (!response.ok) throw new Error('Failed to load description');
+              const text = await response.text();
+              contentContainer.innerHTML = marked.parse(text);
+              details.dataset.loaded = 'true';
+            } catch (err) {
+              console.error(err);
+              contentContainer.innerHTML = '<p>Failed to load project description.</p>';
+            }
+          }
+        }
       }
     });
   };
@@ -270,11 +290,11 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const targetId = e.target.getAttribute('href').slice(1);
       const targetElement = document.getElementById(targetId);
-      
+
       if (targetElement) {
         const headerHeight = document.querySelector('.header')?.offsetHeight || 60;
         const targetPosition = targetElement.offsetTop - headerHeight - 20;
-        
+
         window.scrollTo({
           top: targetPosition,
           behavior: 'smooth'
