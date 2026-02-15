@@ -519,6 +519,16 @@ a {
   color: var(--color-text);
 }
 
+.markdown-content a {
+  color: #3b82f6;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.markdown-content a:hover {
+  color: #2563eb;
+}
+
 /* Sticky Table of Contents */
 .projects-toc {
   position: sticky;

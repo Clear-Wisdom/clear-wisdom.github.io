@@ -2,174 +2,100 @@
   "2026": {
     "Cortex": [
       {
-        "name": "AI Platform Development",
-        "location": "Seoul, Korea",
-        "period": "Jan 2026 - Present",
-        "tags": [
-          "TypeScript",
-          "Next.js",
-          "AI/ML"
-        ],
-        "descriptionUrl": "data/projects/2026/ai-platform-development.md"
-      },
-      {
-        "name": "Infrastructure Optimization",
-        "location": "Seoul, Korea",
-        "period": "Jan 2026 - Present",
-        "tags": [
-          "Docker",
-          "Kubernetes",
-          "AWS"
-        ],
-        "descriptionUrl": "data/projects/2026/infrastructure-optimization.md"
-      },
-      {
-        "name": "API Development",
-        "location": "Seoul, Korea",
-        "period": "Jan 2026 - Present",
-        "tags": [
-          "Python",
-          "FastAPI",
-          "PostgreSQL"
-        ],
-        "descriptionUrl": "data/projects/2026/api-development.md"
-      }
-    ],
-    "Freelance": [
-      {
-        "name": "E-commerce Platform",
-        "location": "Remote",
+        "name": "Software Engineer Intern",
+        "location": "San Francisco, CA (Remote)",
         "period": "Jan 2026 - Feb 2026",
         "tags": [
-          "React",
-          "Node.js",
-          "MongoDB"
+          "AI product",
+          "Product Design",
+          "Full-stack",
+          "Stakeholder Communication"
         ],
-        "descriptionUrl": "data/projects/2026/e-commerce-platform.md"
-      },
+        "descriptionUrl": "data/projects/2026/Cortex.md"
+      }
+    ],
+    "Scramble v2": [
       {
-        "name": "Mobile App Development",
-        "location": "Remote",
-        "period": "Jan 2026 - Present",
+        "name": "Personal Project (In progress)",
+        "location": "Seoul, Korea",
+        "period": "Dec 2025 - Present",
         "tags": [
-          "React Native",
-          "Firebase"
+          "Product Design",
+          "Solo Founder"
         ],
-        "descriptionUrl": "data/projects/2026/mobile-app-development.md"
-      },
-      {
-        "name": "Consulting Project",
-        "location": "Remote",
-        "period": "Jan 2026",
-        "tags": [
-          "Consulting",
-          "Architecture"
-        ],
-        "descriptionUrl": "data/projects/2026/consulting-project.md"
+        "descriptionUrl": "data/projects/2026/Scramble.md"
       }
     ]
   },
   "2025": {
-    "Startup A": [
+    "Scramble v1": [
       {
-        "name": "Product Launch",
+        "name": "Personal Project",
         "location": "Seoul, Korea",
-        "period": "Jul 2025 - Dec 2025",
+        "period": "Aug 2025 - Dec 2025",
         "tags": [
-          "Product Management",
-          "Agile"
+          "Product Design",
+          "Solo Founder"
         ],
-        "descriptionUrl": "data/projects/2025/product-launch.md"
-      },
-      {
-        "name": "Backend Refactoring",
-        "location": "Seoul, Korea",
-        "period": "Mar 2025 - Jun 2025",
-        "tags": [
-          "Go",
-          "gRPC",
-          "Microservices"
-        ],
-        "descriptionUrl": "data/projects/2025/backend-refactoring.md"
-      },
-      {
-        "name": "DevOps Pipeline",
-        "location": "Seoul, Korea",
-        "period": "Jan 2025 - Feb 2025",
-        "tags": [
-          "CI/CD",
-          "GitHub Actions",
-          "Terraform"
-        ],
-        "descriptionUrl": "data/projects/2025/devops-pipeline.md"
+        "descriptionUrl": "data/projects/2025/Scramble.md"
       }
     ],
-    "Company B": [
+    "Softbank Hackathon": [
       {
-        "name": "Data Pipeline",
-        "location": "Busan, Korea",
-        "period": "Aug 2025 - Nov 2025",
+        "name": "Team Lead",
+        "location": "Seoul, Korea",
+        "period": "Nov 2025",
         "tags": [
-          "Apache Kafka",
-          "Spark"
+          "Leadership",
+          "Cloud",
+          "Documentation"
         ],
-        "descriptionUrl": "data/projects/2025/data-pipeline.md"
-      },
-      {
-        "name": "ML Model Deployment",
-        "location": "Busan, Korea",
-        "period": "May 2025 - Jul 2025",
-        "tags": [
-          "MLOps",
-          "TensorFlow"
-        ],
-        "descriptionUrl": "data/projects/2025/ml-model-deployment.md"
-      },
-      {
-        "name": "Dashboard Development",
-        "location": "Busan, Korea",
-        "period": "Feb 2025 - Apr 2025",
-        "tags": [
-          "Vue.js",
-          "D3.js"
-        ],
-        "descriptionUrl": "data/projects/2025/dashboard-development.md"
+        "descriptionUrl": "data/projects/2025/Softbank.md"
       }
     ],
-    "Open Source": [
+    "GDGoC Yonsei: Google Developers Group on Campus Yonsei": [
       {
-        "name": "Library Contribution",
-        "location": "Remote",
-        "period": "2025",
+        "name": "Cloud Part Core Member",
+        "location": "Seoul, Korea",
+        "period": "Aug 2025 - Jul 2026 (Expected)",
         "tags": [
-          "Open Source",
-          "TypeScript"
+          "Leadership",
+          "Cloud",
+          "Documentation"
         ],
-        "descriptionUrl": "data/projects/2025/library-contribution.md"
-      },
+        "descriptionUrl": "data/projects/2025/GDGoCCloudCore.md"
+      }
+    ],
+    "AWS Cloud School": [
       {
-        "name": "CLI Tool Development",
-        "location": "Remote",
-        "period": "2025",
+        "name": "Student",
+        "location": "Seoul, Korea",
+        "period": "Dec 2024 - Jul 2025",
         "tags": [
-          "Rust",
-          "CLI"
+          "Leadership",
+          "Cloud",
+          "AI product",
+          "Product Design"
         ],
-        "descriptionUrl": "data/projects/2025/cli-tool-development.md"
-      },
-      {
-        "name": "Documentation",
-        "location": "Remote",
-        "period": "2025",
-        "tags": [
-          "Technical Writing"
-        ],
-        "descriptionUrl": "data/projects/2025/documentation.md"
+        "descriptionUrl": "data/projects/2025/AWSCloudSchool.md"
       }
     ]
   },
   "2024": {
-    "ISSU: Student's Society of IT Management Strategy": [
+    "GDGoC Yonsei: Google Developers Group on Campus Yonsei": [
+      {
+        "name": "Design Part Core Member",
+        "location": "Seoul, Korea",
+        "period": "Aug 2024 - Jul 2025",
+        "tags": [
+          "Leadership",
+          "Stakeholder Communication",
+          "UX/UI Design"
+        ],
+        "descriptionUrl": "data/projects/2024/GDGoC-DesignPartCore.md"
+      }
+    ],
+    "ISSU: Student's Society on IT Business Strategy": [
       {
         "name": "Vice President",
         "location": "Seoul, Korea",
@@ -181,9 +107,20 @@
         "descriptionUrl": "data/projects/2024/ISSU-VicePresident.md"
       },
       {
+        "name": "Mathpresso: academic-industrial cooperation",
+        "location": "Seoul, Korea",
+        "period": "Oct 2024 - Dec 2024",
+        "tags": [
+          "Business",
+          "AI product",
+          "Product Design"
+        ],
+        "descriptionUrl": "data/projects/2024/ISSU-Mathpresso.md"
+      },
+      {
         "name": "Microsoft: academic-industrial cooperation",
         "location": "Seoul, Korea",
-        "period": "Aug 2024 - Jun 2024",
+        "period": "Aug 2024 - Dec 2024",
         "tags": [
           "Leadership",
           "Business",
@@ -209,8 +146,8 @@
         "period": "Apr 2024 - Jun 2024",
         "tags": [
           "Leadership",
-          "Product Management",
-          "Service Design"
+          "Project Management",
+          "Product Design"
         ],
         "descriptionUrl": "data/projects/2024/ISSU-SamsungSecurities.md"
       }
