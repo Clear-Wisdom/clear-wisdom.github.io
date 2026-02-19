@@ -53,6 +53,18 @@
         "descriptionUrl": "data/projects/2025/Softbank.md"
       }
     ],
+    "NextEditor: GenAI Contest in Yonsei University": [
+      {
+        "name": "Team Member",
+        "location": "Seoul, Korea",
+        "period": "Sep 2025 - Oct 2025",
+        "tags": [
+          "Product Design",
+          "Project Management"
+        ],
+        "descriptionUrl": "data/projects/2025/GenAI.md"
+      }
+    ],
     "GDGoC Yonsei: Google Developers Group on Campus Yonsei": [
       {
         "name": "Cloud Part Core Member",
