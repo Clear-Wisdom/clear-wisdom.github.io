@@ -1,5 +1,20 @@
 {
   "2026": {
+    "HAI Research Intern": [
+      {
+        "name": "Research Intern",
+        "location": "Yonsei University, Seoul, Korea",
+        "period": "Mar 2026 - Present",
+        "tags": [
+          "AI product",
+          "Product Design",
+          "Research",
+          "Stakeholder Communication",
+          "Documentation"
+        ],
+        "descriptionUrl": "data/projects/2026/LabIntern.md"
+      }
+    ],
     "Cortex": [
       {
         "name": "Software Engineer Intern",
@@ -16,12 +31,14 @@
     ],
     "Scramble v2": [
       {
-        "name": "Personal Project (In progress)",
+        "name": "Personal Project",
         "location": "Seoul, Korea",
         "period": "Dec 2025 - Present",
         "tags": [
           "Product Design",
-          "Solo Founder"
+          "Solo Founder",
+          "Cloud",
+          "Business"
         ],
         "descriptionUrl": "data/projects/2026/Scramble.md"
       }
