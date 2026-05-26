@@ -92,9 +92,22 @@ document.addEventListener('DOMContentLoaded', () => {
   // ========================================
   // Email Copy to Clipboard
   // ========================================
+  const emailItem = document.getElementById('emailItem');
   const emailDropdown = document.getElementById('emailDropdown');
   const copySuccess = document.getElementById('copySuccess');
   const email = 'seoho38hwang@gmail.com';
+
+  // Tap the email icon to reveal/hide the address (mobile)
+  emailItem?.addEventListener('click', () => {
+    emailItem.classList.toggle('open');
+  });
+
+  // Close the reveal when tapping outside
+  document.addEventListener('click', (e) => {
+    if (emailItem && !emailItem.contains(e.target)) {
+      emailItem.classList.remove('open');
+    }
+  });
 
   emailDropdown?.addEventListener('click', async (e) => {
     e.stopPropagation();

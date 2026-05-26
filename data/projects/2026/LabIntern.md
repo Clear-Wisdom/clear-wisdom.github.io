@@ -1,7 +1,7 @@
 ### New System for Trust Calibration
 
-- Conducted research on a system for trust calibration, with professor [Dae Hyun Kim](https://dhkim16.github.io/) in [Human-Data Interaction Lab.](https://hdil.yonsei.ac.kr/)
-- Defined that users tend to over-rely on AI, which can have negative consequences when AI provides incorrect information.
-- Researching methodologies to make the cost of verifying AI's answers cheaper than the cost of blindly trusting AI.
-- Designed a system that integrates Source, Explanation, and Confidence with an improved UI.
+- Conducted research on a trust calibration system with Professor [Dae Hyun Kim](https://dhkim16.github.io/) at the [Human-Data Interaction Lab](https://hdil.yonsei.ac.kr/).
+- Identified that users tend to over-rely on AI, which can lead to negative consequences when AI provides incorrect information.
+- Researched methodologies to calibrate human trust in AI to align with the AI's actual capability.
+- Designed a system that adapts its UI based on the user's trust level and expected accuracy of the AI.
 - Performed a user study to validate the hypothesis.

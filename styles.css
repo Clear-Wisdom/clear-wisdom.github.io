@@ -55,6 +55,7 @@ body {
   color: var(--color-text);
   line-height: 1.6;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 a {
@@ -506,6 +507,8 @@ a {
 /* Markdown Content Styles inside Project Details */
 .markdown-content {
   padding-top: 20px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .markdown-content ul,
@@ -523,10 +526,27 @@ a {
   color: #3b82f6;
   text-decoration: underline;
   text-underline-offset: 2px;
+  word-break: break-word;
 }
 
 .markdown-content a:hover {
   color: #2563eb;
+}
+
+.markdown-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.markdown-content pre {
+  overflow-x: auto;
+  padding: 0.75rem;
+  background: var(--color-bg-tertiary);
+  border-radius: 6px;
+}
+
+.markdown-content code {
+  word-break: break-word;
 }
 
 /* Sticky Table of Contents */
@@ -591,17 +611,31 @@ a {
 /* ========================================
    Responsive Design
    ======================================== */
+@media (max-width: 1100px) {
+  .projects-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-toc {
+    display: none;
+  }
+}
+
 @media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
   .sidebar {
     width: 100%;
     height: auto;
     position: relative;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 1.5rem;
-    gap: 1rem;
+    gap: 1.25rem;
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
   }
 
   .profile {
@@ -616,8 +650,61 @@ a {
 
   .contact-links {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    gap: 0.5rem;
+  }
+
+  .contact-item {
+    padding: 0.65rem;
+  }
+
+  .contact-item:hover {
+    transform: none;
+  }
+
+  /* Icon-only on mobile — hide direct label spans (Email/LinkedIn/GitHub) */
+  .contact-item > span {
+    display: none;
+  }
+
+  /* Email: tap the icon to reveal */
+  .email-item {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Disable desktop hover reveal on mobile */
+  .email-item:hover .email-details {
+    display: none;
+    animation: none;
+  }
+
+  .email-item.open .email-details {
+    display: flex;
+    opacity: 1;
+    transform: none;
+    flex-basis: 100%;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 0.5rem;
+    animation: slideDown 0.2s ease-out forwards;
+  }
+
+  .email-item.open {
+    background: var(--color-bg-tertiary);
+    border-radius: 8px;
+  }
+
+  .email-text {
+    font-size: 0.85rem;
+  }
+
+  .copy-success {
+    position: static;
+    transform: none;
+    margin-left: 0.25rem;
   }
 
   .main-content {
@@ -625,28 +712,67 @@ a {
   }
 
   .header {
-    padding: 0 1.5rem;
+    padding: 0 1.25rem;
   }
 
   .section {
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.25rem;
   }
 }
 
 @media (max-width: 600px) {
+  .nav {
+    gap: 0.25rem;
+  }
+
   .nav-link {
     padding: 0.5rem 0.75rem;
     font-size: 0.9rem;
   }
-}
 
-@media (max-width: 1100px) {
-  .projects-layout {
-    grid-template-columns: 1fr;
+  .header {
+    padding: 0 1rem;
   }
 
-  .projects-toc {
-    display: none;
+  .section {
+    padding: 1.5rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .year-title {
+    font-size: 1.25rem;
+  }
+
+  .org-group {
+    margin-left: 0.25rem;
+    padding-left: 0.75rem;
+  }
+
+  .project-meta {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .nav-link {
+    padding: 0.4rem 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .theme-toggle {
+    width: 36px;
+    height: 36px;
+  }
+
+  .profile-name {
+    font-size: 1.3rem;
+  }
+
+  .email-text {
+    font-size: 0.65rem;
   }
 }
 
