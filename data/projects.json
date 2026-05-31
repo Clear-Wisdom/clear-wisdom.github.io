@@ -1,5 +1,19 @@
 {
   "2026": {
+      "Ten-minute government support project": [
+      {
+        "name": "Personal Project",
+        "location": "Seoul, Korea",
+        "period": "May 2026 - Present",
+        "tags": [
+          "AI product",
+          "Hackathon",
+          "Solo Founder",
+          "Business"
+        ],
+        "descriptionUrl": "data/projects/2026/tenminsup.md"
+      }
+    ],
       "Block Agent": [
       {
         "name": "Team Member",
@@ -16,7 +30,7 @@
     ],
       "The Prism Post": [
       {
-        "name": "Personal Project",
+        "name": "Team Project, Co-founder",
         "location": "Seoul, Korea",
         "period": "Apr 2026 - Present",
         "tags": [
