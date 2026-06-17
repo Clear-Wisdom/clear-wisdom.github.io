@@ -372,6 +372,18 @@ a {
   font-weight: 600;
 }
 
+.about-content .inline-link {
+  color: var(--color-accent);
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.about-content .inline-link:hover {
+  border-bottom-color: var(--color-accent);
+}
+
 
 
 /* ========================================

@@ -70,6 +70,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // In-text links that jump to a section (reuse header nav behavior)
+  document.querySelectorAll('[data-goto]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetSection = link.getAttribute('data-goto');
+      document.querySelector(`.nav-link[data-section="${targetSection}"]`)?.click();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
   // Handle initial hash on page load
   const handleInitialHash = () => {
     const hash = window.location.hash.slice(1);
