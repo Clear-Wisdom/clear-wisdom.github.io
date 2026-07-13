@@ -1,6 +1,5 @@
 ### AI-driven learning support app
 
-- [Scramble](https://doscramble.com/intro)
 - Identified that most learning-support software focuses on generating quizzes rather than identifying users' weaknesses.
 - Built a proficiency-scoring algorithm using a weighted average calculation.
 - Recruited beta-testers and conducted user interviews to define potential feature updates and validate market fit.
