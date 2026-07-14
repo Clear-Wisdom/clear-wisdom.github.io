@@ -1,19 +1,14 @@
-### Harness Engineering Intern == Forward Deployed Engineer Intern
+### Harness Engineering Intern
 
-- Coming Soon!
-<!-- 
-- 사내 비효율을 정의하고 AI 혹은 Software로 효율화 진행
-- IR에 대한 녹음본을 업로드하면 요약본을 만들어주는 기존 AI software를 아무도 쓰지 않는 문제 발견
-    - 요약본에 오탈자가 계속 발생하여 결국 사람이 다시 읽어야 하는 페인 포인트가 있었기 때문
-    - 이는 Company-specific한 단어들에 대한 사전 지식이 정의되지 않았기 때문
-    - OpenAI API를 사용하여 STT를 진행함과 동시에 기업에 대한 Keyword 리스트 생성
-    - 해당 Keyword 리스트는 기업 이름을 기반으로 공유할 수 있으며, 이를 바탕으로 요약본 속 단어들 자동 교정
-    - 추가 파일 (pdf, docx, etc) 업로드 기능으로 요약본 보강 가능
-    - IR 요약본 작성 시간 xx분 -> xx분으로 단축
-- 사내 소프트웨어가 산재되어 임직원들이 찾아서 사용하기 불편하다는 문제 발견
-    - 통합 포탈 사이트를 만들어 이용하기 편하게 함
-    - 다양한 서비스들의 코드베이스 통합, 디자인 통합, 공통 컴포넌트 추출 및 재사용, 공용 함수 추출 및 재사용 진행
-- 종목 리서치 AI Agent 구축
-    - 기존에 사용하던 플랫폼은 차트 기반 스크리닝이 되는 대신 기업 재무제표 분석이 불가능하거나, 그 반대만 가능한 플랫폼밖에 없었음
-    - 차트 기반 스크리닝과 재무제표 분석이 모두 가능하면서, 자연어로 질의응답이 가능한 AI Agent를 사내에서 관리하는 클라우드에 구축
- -->
+- Embedded with internal stakeholders as a technical partner, owning problem discovery through deployment.
+- Diagnosed and revived an internal IR-summarization tool that staff had abandoned.
+    - Traced the root cause that company-specific terminology produced errors, forced manual re-verification.
+    - Rebuilt it with a keyword dictionary that auto-corrects terms and is shareable across teams.
+    - Added supplementary PDF/DOCX uploads to correct existing results, restoring active adoption.
+- Deployed the Hermes AI agent on the company's managed cloud as a natural-language stock-research assistant.
+    - Turned a vague executive ask ("an AI that pulls market data and disclosures") into concrete requirements through a direct 1:1, then scoped and shipped it end-to-end.
+    - Built 5+ custom skills, including real-time stock lookups, brokerage-style report generation, and Q&A over live disclosures and reports.
+    - Hardened access for a regulated environment with RBAC, a fail-closed membership gate, and API-key-scoped requests.
+- Cut a recurring 3-hour manual reporting task to 3–5 minutes by automating cross-source Excel aggregation.
+    - Traced it to unnormalized calendar data, then defined, socialized, and documented a naming standard across the team.
+    - Built a self-serve web admin page so the tooling outlives my internship.
